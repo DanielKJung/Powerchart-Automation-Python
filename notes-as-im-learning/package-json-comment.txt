@@ -1,0 +1,13 @@
+//ts-node --esm
+    // "dev:download": "ts-node --esm src/automation/powerchart-download.ts",
+    // "dev:quit": "ts-node --esm src/automation/powerchart-quit.ts",
+    // "dev:resize": "ts-node --esm src/automation/powerchart-resize.ts",
+    // "dev:login": "ts-node --esm src/automation/powerchart-login.ts",
+
+//tsx
+
+
+u can do ts-node --esm, or tsx. or even --loader ts-node/esm.
+
+
+just different ways.
