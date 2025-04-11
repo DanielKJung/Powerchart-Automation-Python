@@ -126,7 +126,9 @@ def click_at_coordinates(x: int, y: int, clicks: int = 1, interval: float = 0.5)
                 subprocess.run(cmd)
         else:
             # Fallback to pyautogui
+            print("Starting powerchart_mcp.py...")
             import pyautogui
+            print("Imported pyautogui")
             pyautogui.click(x=x, y=y, clicks=clicks, interval=interval)
     else:
         # Use pyautogui for other platforms
