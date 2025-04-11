@@ -45,3 +45,10 @@ temp/
 # Playwright browser binaries
 .playwright/
 playwright-downloads/
+
+
+
+# ignore images
+image.png
+output.png
+test_image.txt
