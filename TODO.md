@@ -86,3 +86,29 @@ ENTER + up arrow (open total summary)
 do the LLM-assisted scroll down until next header algorithm.
 
  -->
+
+
+
+
+
+# I changed claude_desktop_config
+- i changed command: uv to command: /Users/danieljung/.local/bin/uv
+because im having trouble having claude mcp load uv.
+
+![alt text](image.png)
+
+
+
+
+# This is how to shut down lingering powerchart_mcp.py processes
+ps aux | grep mcp
+find the PID, then do 
+kill 35284 (for example)
+
+
+also do:
+
+lsof -i :6274
+kill 34864 (for example)
+
+doing pkill -f powerchart_mcp.py only shuts down python, not the node.js thingy, so the port stays open, without closing. messes with future mcp runs cuz of an existing open port.
