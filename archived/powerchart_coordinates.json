@@ -1,0 +1,511 @@
+{
+    "home": {
+      "patientLists": {
+        "coordinates": [360, 130],
+        "description": "see various Patient Lists"
+      }
+    },
+    "patientLists": {
+      "pinkA": {
+        "coordinates": [220, 280],
+        "description": "see my team's patient list. requires you to be in Patient Lists"
+      },
+      "sortToggle": {
+        "lengthOfStay": {
+          "coordinates": [640, 340],
+          "description": "sort toggle for Length Of Stay. requires you to be in a specific patient list."
+        },
+        "discharged": {
+          "coordinates": [900, 340],
+          "description": "sort toggle for Discharged boolean. requires you to be in a specific patient list."
+        }
+      },
+      "patients": {
+        "patient1": {
+          "coordinates": [200, 358]
+        },
+        "patient2": {
+          "coordinates": [200, 376]
+        },
+        "patient3": {
+          "coordinates": [200, 394]
+        },
+        "patient4": {
+          "coordinates": [200, 411]
+        },
+        "patient5": {
+          "coordinates": [200, 429]
+        },
+        "patient6": {
+          "coordinates": [200, 447]
+        },
+        "patient7": {
+          "coordinates": [200, 465]
+        },
+        "patient8": {
+          "coordinates": [200, 483]
+        },
+        "patient9": {
+          "coordinates": [200, 501]
+        },
+        "patient10": {
+          "coordinates": [200, 519]
+        },
+        "patient11": {
+          "coordinates": [200, 537]
+        },
+        "patient12": {
+          "coordinates": [200, 555]
+        },
+        "patient13": {
+          "coordinates": [200, 574]
+        },
+        "patient14": {
+          "coordinates": [200, 592]
+        },
+        "patient15": {
+          "coordinates": [200, 610]
+        },
+        "patient16": {
+          "coordinates": [200, 627]
+        },
+        "patient17": {
+          "coordinates": [200, 645]
+        },
+        "patient18": {
+          "coordinates": [200, 663]
+        },
+        "patient19": {
+          "coordinates": [200, 681]
+        },
+        "patient20": {
+          "coordinates": [200, 698]
+        }
+      }
+    },
+    "specificPatient": {
+      "tabs": {
+        "demographics": {
+          "coordinates": [250, 350]
+        },
+        "inpatientManage": {
+          "coordinates": [400, 350]
+        },
+        "inpatientQuickOrders": {
+          "coordinates": [550, 350]
+        }
+      },
+      "screenshot": {
+        "warningArea": {
+          "leftUpperCorner": {
+            "coordinates": [1550, 270]
+          },
+          "rightLowerCorner": {
+            "coordinates": [1799, 1149]
+          }
+        }
+      },
+      "hideSmartZone": {
+        "coordinates": [1575, 290],
+        "description": "delete warning, seems to be called internally as 'Hide SmartZone'"
+      }
+    },
+    "inpatientManage": {
+      "screenshot": {
+        "leftUpperCorner": {
+          "coordinates": [370, 370]
+        },
+        "rightLowerCorner": {
+          "coordinates": [1774, 1149]
+        }
+      },
+      "scroll": {
+        "up": {
+          "coordinates": [1783, 380]
+        },
+        "down": {
+          "coordinates": [1783, 1130],
+          "description": "press 17 times to load a new 'page' while maintaining slight context."
+        }
+      },
+      "sectionList": {
+        "scroll": {
+          "up": {
+            "coordinates": [355, 410],
+            "description": "press 6 times to return to default (completely scrolled-up)"
+          },
+          "down": {
+            "coordinates": [355, 1130],
+            "description": "press 6 times to view the others."
+          }
+        },
+        "defaultSections": {
+          "hospitalCourse": {
+            "coordinates": [300, 420]
+          },
+          "actionAndSituationalAwareness": {
+            "coordinates": [300, 465]
+          },
+          "reminders": {
+            "coordinates": [300, 490]
+          },
+          "problemList": {
+            "coordinates": [300, 515]
+          },
+          "histories": {
+            "coordinates": [300, 540]
+          },
+          "implantHistory": {
+            "coordinates": [300, 565]
+          },
+          "allergies": {
+            "coordinates": [300, 590]
+          },
+          "immunizations": {
+            "coordinates": [300, 615]
+          },
+          "linesTubesDrains": {
+            "coordinates": [300, 640]
+          },
+          "riskIndicators": {
+            "coordinates": [300, 665]
+          },
+          "mediaGallery": {
+            "coordinates": [300, 690]
+          },
+          "documentation": {
+            "coordinates": [300, 715]
+          },
+          "diagnostics": {
+            "coordinates": [300, 740]
+          },
+          "labs": {
+            "coordinates": [300, 765]
+          },
+          "microbiology": {
+            "coordinates": [300, 790]
+          },
+          "pathology": {
+            "coordinates": [300, 815]
+          },
+          "intakeAndOutput": {
+            "coordinates": [300, 840]
+          },
+          "vitalSigns": {
+            "coordinates": [300, 865]
+          },
+          "medications": {
+            "coordinates": [300, 890]
+          },
+          "patientTimelineMedications": {
+            "coordinates": [300, 915]
+          },
+          "qualityMeasures": {
+            "coordinates": [300, 955]
+          },
+          "orderProfile": {
+            "coordinates": [300, 980]
+          },
+          "subjectiveHPI": {
+            "coordinates": [300, 1015],
+            "description": "Subjective/History of Present Illness (HPI)"
+          },
+          "reviewOfSystems": {
+            "coordinates": [300, 1050],
+            "description": "Review of Systems (ROS)"
+          },
+          "objectivePhysicalExam": {
+            "coordinates": [300, 1075]
+          },
+          "assessmentAndPlan": {
+            "coordinates": [300, 1100]
+          }
+        },
+        "scrollDownSections": {
+          "healthMaintenance": {
+            "coordinates": [300, 880]
+          },
+          "visitsList": {
+            "coordinates": [300, 905]
+          },
+          "externalReferrals": {
+            "coordinates": [300, 930]
+          },
+          "newOrderEntry": {
+            "coordinates": [300, 960]
+          },
+          "transfusion": {
+            "coordinates": [300, 980],
+            "description": "patient blood bank details and transfusion history"
+          },
+          "asthmaActionPlan": {
+            "coordinates": [300, 1005]
+          },
+          "inpatientProgressNote": {
+            "coordinates": [300, 1070],
+            "description": "to WRITE notes"
+          },
+          "admissionHandP": {
+            "coordinates": [300, 1100],
+            "description": "to WRITE notes"
+          },
+          "selectOtherNote": {
+            "coordinates": [300, 1125],
+            "description": "to WRITE notes"
+          }
+        }
+      },
+      "history": {
+        "problems": {
+          "coordinates": [440, 440]
+        },
+        "procedure": {
+          "coordinates": [520, 440]
+        },
+        "family": {
+          "coordinates": [600, 440]
+        },
+        "social": {
+          "coordinates": [680, 440]
+        }
+      },
+      "mediaGallery": {
+        "screenshot": {
+          "leftUpperCorner": {
+            "coordinates": [370, 370]
+          },
+          "rightLowerCorner": {
+            "coordinates": [559, 1149]
+          }
+        },
+        "selectAllMedia": {
+          "coordinates": [560, 495]
+        },
+        "mediaByDate": {
+          "latest": {
+            "coordinates": [450, 490],
+            "description": "all media from latest date"
+          },
+          "secondLatest": {
+            "coordinates": [450, 520],
+            "description": "all media from 2nd to latest date"
+          },
+          "thirdLatest": {
+            "coordinates": [450, 550],
+            "description": "3rd"
+          },
+          "fourthLatest": {
+            "coordinates": [450, 580],
+            "description": "4th"
+          },
+          "fifthLatest": {
+            "coordinates": [450, 610],
+            "description": "5th"
+          }
+        },
+        "view": {
+          "coordinates": [0, 0],
+          "description": "to VIEW, it's most systematically bullet-proof to click Select All Media and then press: Tab, Enter."
+        },
+        "mediaViewer": {
+          "previousImage": {
+            "coordinates": [400, 420]
+          },
+          "nextImage": {
+            "coordinates": [435, 420]
+          },
+          "screenshot": {
+            "entireViewer": {
+              "leftUpperCorner": {
+                "coordinates": [240, 360],
+                "description": "screen-grab entire media viewer for comfort"
+              },
+              "rightLowerCorner": {
+                "coordinates": [1704, 1149],
+                "description": "screen-grab entire media viewer for comfort"
+              }
+            },
+            "mediaOnly": {
+              "leftUpperCorner": {
+                "coordinates": [258, 585],
+                "description": "screen-grab media only for vLM"
+              },
+              "rightLowerCorner": {
+                "coordinates": [1690, 1127],
+                "description": "screen-grab media only for vLM"
+              }
+            }
+          }
+        }
+      },
+      "documentation": {
+        "documentationView": {
+          "coordinates": [100, 505],
+          "description": "go to a dedicated Documentation View."
+        },
+        "navigation": {
+          "previousNote": {
+            "coordinates": [1600, 380],
+            "description": "towards more recent notes"
+          },
+          "nextNote": {
+            "coordinates": [1700, 380],
+            "description": "towards older notes"
+          },
+          "previousPage": {
+            "coordinates": [250, 1120],
+            "description": "towards more recent pages."
+          },
+          "nextPage": {
+            "coordinates": [350, 1120],
+            "description": "towards older pages."
+          }
+        },
+        "notes": {
+          "note1": {
+            "coordinates": [400, 450],
+            "description": "1st note of the page"
+          },
+          "note2": {
+            "coordinates": [400, 486],
+            "description": "2nd note of the page"
+          },
+          "note3": {
+            "coordinates": [400, 522],
+            "description": "3rd note of the page"
+          },
+          "note4": {
+            "coordinates": [400, 558],
+            "description": "4th note of the page"
+          },
+          "note5": {
+            "coordinates": [400, 594],
+            "description": "5th note of the page"
+          },
+          "note6": {
+            "coordinates": [400, 630],
+            "description": "6th note of the page"
+          },
+          "note7": {
+            "coordinates": [400, 666],
+            "description": "7th note of the page"
+          },
+          "note8": {
+            "coordinates": [400, 702],
+            "description": "8th note of the page"
+          },
+          "note9": {
+            "coordinates": [400, 738],
+            "description": "9th note of the page"
+          },
+          "note10": {
+            "coordinates": [400, 774],
+            "description": "10th note of the page"
+          },
+          "note11": {
+            "coordinates": [400, 810],
+            "description": "11th note of the page"
+          },
+          "note12": {
+            "coordinates": [400, 846],
+            "description": "12th note of the page"
+          },
+          "note13": {
+            "coordinates": [400, 882],
+            "description": "13th note of the page"
+          },
+          "note14": {
+            "coordinates": [400, 918],
+            "description": "14th note of the page"
+          },
+          "note15": {
+            "coordinates": [400, 954],
+            "description": "15th note of the page"
+          },
+          "note16": {
+            "coordinates": [400, 990],
+            "description": "16th note of the page"
+          },
+          "note17": {
+            "coordinates": [400, 1026],
+            "description": "17th note of the page"
+          },
+          "note18": {
+            "coordinates": [400, 1062],
+            "description": "18th note of the page"
+          }
+        }
+      },
+      "diagnostics": {
+        "clickDiagnostics": {
+          "coordinates": [430, 395],
+          "description": "click this to enable keyboard navigation"
+        },
+        "exitDiagnosticReport": {
+          "coordinates": [30, 115]
+        }
+      },
+      "labs": {
+        "resultsReview": {
+          "coordinates": [100, 380],
+          "description": "go to a dedicated Results Review View (includes vitals, labs, and radiology/diagnostics)"
+        },
+        "allRadiology": {
+          "coordinates": [500, 350],
+          "description": "see all Radiology/Diagnostics results in Results Review view."
+        },
+        "allLaboratory": {
+          "coordinates": [400, 350],
+          "description": "see all Lab results in Results Review view."
+        },
+        "vitals": {
+          "coordinates": [350, 350],
+          "description": "see all Vitals results in Results Review view."
+        },
+        "changeClinicalRange": {
+          "coordinates": [700, 430],
+          "description": "change the date-window of what results are displayed."
+        },
+        "copyAllLaboratoryTable": {
+          "coordinates": [500, 470]
+        },
+        "copyAllVitalsTable": {
+          "coordinates": [500, 470]
+        }
+      },
+      "microbiology": {
+        "activateMicrobiology": {
+          "coordinates": [900, 390],
+          "description": "click here to activate keyboard navigation for microbiology"
+        },
+        "copyMicrobiologyResults": {
+          "coordinates": [900, 600]
+        }
+      },
+      "intakeAndOutput": {
+        "activateIntakeAndOutput": {
+          "coordinates": [900, 390],
+          "description": "click here to activate keyboard navigation for Intake & Output"
+        }
+      },
+      "patientTimelineMedications": {
+        "scroll": {
+          "down": {
+            "coordinates": [1726, 901],
+            "description": "press 9 times to load a new page (with sliver of context)"
+          },
+          "up": {
+            "coordinates": [1726, 515]
+          }
+        },
+        "screenshot": {
+          "leftUpperCorner": {
+            "coordinates": [380, 460]
+          },
+          "rightLowerCorner": {
+            "coordinates": [1740, 915]
+          }
+        }
+      }
+    }
+  }

@@ -290,3 +290,27 @@ do the LLM-assisted scroll down until next header algorithm.
 300, 1100, Admission H&P
 300, 1125, Select Other Note
 
+
+warning sign check
+1550, 270
+1799 1149
+
+inpatient/manage main content view
+370 370
+1774 1149 
+
+media gallery's media folders
+370 370
+559 1149
+
+media viewer - entire UI
+240 360
+1704 1149
+
+media viewer - media only.
+258 585
+1690 1127
+
+patient timeline meds view
+380 460
+1740 915

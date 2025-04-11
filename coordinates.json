@@ -1,0 +1,209 @@
+{
+    "home": [
+      {"x": 360, "y": 130, "name": "Patient List", "description": "see various Patient Lists"}
+    ],
+    "patient_lists": [
+      {"x": 220, "y": 280, "name": "Pink A", "description": "see my team's patient list. requires you to be in Patient Lists"}
+    ],
+    "specific_patient_list": [
+      {"x": 640, "y": 340, "name": "Length Of Stay", "description": "sort toggle for Length Of Stay. requires you to be in a specific patient list"},
+      {"x": 900, "y": 340, "name": "Discharged", "description": "sort toggle for Discharged boolean. requires you to be in a specific patient list"},
+      {"x": 200, "y": 358, "name": "Patient 1", "description": "double click to see patient. 1 is top of the list. needs vision language model assistance"},
+      {"x": 200, "y": 376, "name": "Patient 2", "description": null},
+      {"x": 200, "y": 394, "name": "Patient 3", "description": null},
+      {"x": 200, "y": 411, "name": "Patient 4", "description": null},
+      {"x": 200, "y": 429, "name": "Patient 5", "description": null},
+      {"x": 200, "y": 447, "name": "Patient 6", "description": null},
+      {"x": 200, "y": 465, "name": "Patient 7", "description": null},
+      {"x": 200, "y": 483, "name": "Patient 8", "description": null},
+      {"x": 200, "y": 501, "name": "Patient 9", "description": null},
+      {"x": 200, "y": 519, "name": "Patient 10", "description": null},
+      {"x": 200, "y": 537, "name": "Patient 11", "description": null},
+      {"x": 200, "y": 555, "name": "Patient 12", "description": null},
+      {"x": 200, "y": 574, "name": "Patient 13", "description": null},
+      {"x": 200, "y": 592, "name": "Patient 14", "description": null},
+      {"x": 200, "y": 610, "name": "Patient 15", "description": null},
+      {"x": 200, "y": 627, "name": "Patient 16", "description": null},
+      {"x": 200, "y": 645, "name": "Patient 17", "description": null},
+      {"x": 200, "y": 663, "name": "Patient 18", "description": null},
+      {"x": 200, "y": 681, "name": "Patient 19", "description": null},
+      {"x": 200, "y": 698, "name": "Patient 20", "description": null}
+    ],
+    "specific_patient": [
+      {"x": 100, "y": 305, "name": "Provider View", "description": "important prerequisite for completing any tasks in Inpatient/Manage view. must remember to execute this function again, after leaving to independent views outside the Inpatient/Manage view, such as the independent Documentation view, independent Results Review."},
+      {"x": 250, "y": 350, "name": "Demographics", "description": "not used in normal workflow."},
+      {"x": 400, "y": 350, "name": "Inpatient/Manage", "description": "the default view for managing a patient. pre-requisite is to make sure you're in provier view."},
+      {"x": 550, "y": 350, "name": "Inpatient Quick Orders", "description": "not used in normal workflow."},
+      {"x": 1550, "y": 270, "name": "screenshot left-upper corner", "description": "left-upper corner coordinates for taking a screenshot to assess if the specific_patient view has a warning sign. Always check for warning sign when you're loading a specific patient view for a new patient for the first time, as UI elements get messed around because of this warning box! If there IS a warning box, we want to minimize it by deleting/hiding it."},
+      {"x": 1799, "y": 1149, "name": "screenshot right-lower corner", "description": "right-lower corner coordinates for taking a screenshot to assess if the specific_patient view has a warning sign. Always check for warning sign when you're loading a specific patient view for a new patient the first time, as UI elements get messed around because of this warning box! If there IS a warning box, we want to minimize it by deleting/hiding it."},
+      {"x": 1575, "y": 290, "name": "delete warning", "description": "delete/hide the warning signs so that the pre-determined coordinates for UI scripting/automation doesn't get screwed over. as long as you click this, all other functions will work normally, unless explicitly stated that it still won't work despite deleting warning."}
+    ],
+    "inpatient_manage": [
+      {"x": 370, "y": 370, "name": "screenshot left-upper corner", "description": "left-upper corner coordinates for taking a screenshot of the main content of Inpatient/Manage view. run this every time you click a new section header from the inpatient/manage view. This is to see if the content within the section extends beyond the screen real-estate. The screenshot will dictate whether or not we need to scroll down to load more of the content in, or not."},
+      {"x": 1774, "y": 1149, "name": "screenshot right-lower corner", "description": "left-upper corner coordinates for taking a screenshot of the main content of Inpatient/Manage view. run this every time you click a new section header from the inpatient/manage view. This is to see if the content within the section extends beyond the screen real-estate. The screenshot will dictate whether or not we need to scroll down to load more of the content in, or not."},
+      {"x": 1783, "y": 380, "name": "scroll up", "description": "Inpatient/Manage view's main content scroll."},
+      {"x": 1783, "y": 1130, "name": "scroll down", "description": "Inpatient/Manage view's main content scroll. If, based on the screenshot of the main content of Inpatient/Manage view, you determine there is more content within this section that needs to be loaded into the screen, press this button 17 times to load in a new 'page' of content from the same section, while maintaining slight context of the content prior to scrolling 17 times."}
+    ],
+    "section_headers": {
+      "default": [
+        {"x": 355, "y": 410, "name": "Section List Scroll Up", "description": "press 6 times to return to default (completely scrolled-up)"},
+        {"x": 355, "y": 1130, "name": "Section List Scroll Down", "description": "press 6 times to view the other section headers in the 'scrolled' category."},
+        {"x": 300, "y": 420, "name": "Hospital Course", "description": "part of the default workflow. check this to see a community-managed description of the patient's hospital course. Some physicians don't fully take advantage of this section, and thus may be empty for some patients."},
+        {"x": 300, "y": 465, "name": "Action & Situational Awareness", "description": "part of the default workflow. see what other physicians want to be aware of, while this patient is being taken care of at our hospital.  "},
+        {"x": 300, "y": 490, "name": "Reminders", "description": "part of the default workflpw. any reminders about this patient's care."},
+        {"x": 300, "y": 515, "name": "Problem List", "description": "part of the default workflow. check to see the patient's problem list. Two checkboxes exist for problems pertinent to 'this visit' and 'chronic' problems."},
+        {"x": 300, "y": 540, "name": "Histories", "description": "part of the default workflow. check for patient's histories: PMH, procedure hx, family hx, social hx."},
+        {"x": 300, "y": 565, "name": "Implant History", "description": "part of the default workflow."},
+        {"x": 300, "y": 590, "name": "Allergies", "description": "part of the default workflow."},
+        {"x": 300, "y": 615, "name": "Immunizations", "description": "part of the default workflow. not particularly important for inpatient patient care, but still check."},
+        {"x": 300, "y": 640, "name": "Lines/Tubes/Drains", "description": "part of the default workflow."},
+        {"x": 300, "y": 665, "name": "Risk Indicators", "description": "part of the default workflow."},
+        {"x": 300, "y": 690, "name": "Media Gallery", "description": "part of the default workflow. most commonly used to check for telemetry waveforms. can also see images here and docuemnts."},
+        {"x": 300, "y": 715, "name": "Documentation", "description": "part of the default workflow. this button not particularly used, because we prefer to go directly to the Documentation view, instead of opening documentations as a content within the Inpatient/Manage view."},
+        {"x": 300, "y": 740, "name": "Diagnostics", "description": "part of the default workflow. we prefer to open the Diagnostics/Radiology results directly from the Results Review view, instead of through this button, though."},
+        {"x": 300, "y": 765, "name": "Labs", "description": "part of the default workflow. we prefer to open the Lab results directly from the Results Review view, instead of through this button, though."},
+        {"x": 300, "y": 790, "name": "Microbiology", "description": "part of the default workflow."},
+        {"x": 300, "y": 815, "name": "Pathology", "description": "part of the default workflow."},
+        {"x": 300, "y": 840, "name": "Intake and Output", "description": "part of the default workflow."},
+        {"x": 300, "y": 865, "name": "Vital Signs", "description": "part of the default workflow. we prefer to get the Vitals results directly from the Results Review view, instead of through this button, though."},
+        {"x": 300, "y": 890, "name": "Medications", "description": "part of the default workflow."},
+        {"x": 300, "y": 915, "name": "Patient Timeline Medications", "description": "part of the default workflow."},
+        {"x": 300, "y": 955, "name": "Quality Measures", "description": "not used in normal workflow."},
+        {"x": 300, "y": 980, "name": "Order Profile", "description": "part of the default workflow, to see what was ordered."},
+        {"x": 300, "y": 1015, "name": "Subjective/History of Present Illness (HPI)", "description": "not used in normal workflow."},
+        {"x": 300, "y": 1050, "name": "Review of Systems (ROS)", "description": "not used in normal workflow."},
+        {"x": 300, "y": 1075, "name": "Objective/Physical Exam", "description": "not used in normal workflow."},
+        {"x": 300, "y": 1100, "name": "Assessment and Plan", "description": "not used in normal workflow."}
+      ],
+      "scrolled": [
+        {"x": 300, "y": 880, "name": "Health Maintenance", "description": "not used in normal workflow. only accessible after executing Section List Scroll Down 6 times, and the scroll state has now changed from 'default' to 'scrolled'."},
+        {"x": 300, "y": 905, "name": "Visits List", "description": "part of the default workflow. only accessible after executing Section List Scroll Down 6 times, and the scroll state has now changed from 'default' to 'scrolled'."},
+        {"x": 300, "y": 930, "name": "External Referrals", "description": "part of the default workflow. only accessible after executing Section List Scroll Down 6 times, and the scroll state has now changed from 'default' to 'scrolled'."},
+        {"x": 300, "y": 960, "name": "New Order Entry", "description": "not used in normal workflow. only accessible after executing Section List Scroll Down 6 times, and the scroll state has now changed from 'default' to 'scrolled'."},
+        {"x": 300, "y": 980, "name": "Transfusion", "description": "patient blood bank details and transfusion history. not used in normal workflow. only accessible after executing Section List Scroll Down 6 times, and the scroll state has now changed from 'default' to 'scrolled'."},
+        {"x": 300, "y": 1005, "name": "Asthma Action Plan", "description": "not used in normal workflow. only accessible after executing Section List Scroll Down 6 times, and the scroll state has now changed from 'default' to 'scrolled'."},
+        {"x": 300, "y": 1070, "name": "Inpatient Progress Note", "description": "click to create an inpatient progress note for a patient who is staying at the hospital. only accessible after executing Section List Scroll Down 6 times, and the scroll state has now changed from 'default' to 'scrolled'"},
+        {"x": 300, "y": 1100, "name": "Admission H&P", "description": "create an H&P for a patient who is just being admitted to the medicine team. only accessible after executing Section List Scroll Down 6 times, and the scroll state has now changed from 'default' to 'scrolled'"},
+        {"x": 300, "y": 1125, "name": "Select Other Note", "description": null}
+      ]
+    },
+    "history": [
+      {"x": 440, "y": 440, "name": "Problems", "description": "must be on the history section within INpatient/Manage view."},
+      {"x": 520, "y": 440, "name": "Procedure", "description": "Part of the default workflow. must be on the history section within INpatient/Manage view."},
+      {"x": 600, "y": 440, "name": "Family", "description": "Part of the default workflow. must be on the history section within INpatient/Manage view."},
+      {"x": 680, "y": 440, "name": "Social", "description": "Part of the default workflow. must be on the history section within INpatient/Manage view."}
+    ],
+    "media_gallery": [
+      {"x": 370, "y": 370, "name": "screenshot left-upper corner", "description": "left-upper corner coordinates for taking a screenshot of media gallery's media folders, organized by date, to see if there are any new media files uploaded that can be looked at."},
+      {"x": 559, "y": 1149, "name": "screenshot right-lower corner", "description": "right-lower corner coordinates for taking a screenshot of media gallery's media folders, organized by date, to see if there are any new media files uploaded that can be looked at."},
+      {"x": 560, "y": 495, "name": "Select All Media", "description": null},
+      {"x": 450, "y": 490, "name": "all media from latest date", "description": "opening the media gallery section should already have this folder loaded by default."},
+      {"x": 450, "y": 520, "name": "all media from 2nd to latest date", "description": "if, from the media gallery screenshot, there is a 2nd folder (older date) that we haven't looked at, yet, click this to open that to select all media, for bulk viewing after loading all medias from all folders not yet loaded and in our database."},
+      {"x": 450, "y": 550, "name": "all media from 3rd to latest date", "description": "if, from the media gallery screenshot, there is a 3rd folder (older date) that we haven't looked at, yet, click this to open that to select all media, for bulk viewing after loading all medias from all folders not yet loaded and in our database."},
+      {"x": 450, "y": 580, "name": "all media from 4th to latest date", "description": "if, from the media gallery screenshot, there is a 4th folder (older date) that we haven't looked at, yet, click this to open that to select all media, for bulk viewing after loading all medias from all folders not yet loaded and in our database."},
+      {"x": 450, "y": 610, "name": "all media from 5th to latest date", "description": "if, from the media gallery screenshot, there is a 5th folder (older date) that we haven't looked at, yet, click this to open that to select all media, for bulk viewing after loading all medias from all folders not yet loaded and in our database."}
+    ],
+    "media_viewer": [
+      {"x": 400, "y": 420, "name": "previous image", "description": "must be inside the media viewer, after clicking 'select all media' and 'view'."},
+      {"x": 435, "y": 420, "name": "next image", "description": "must be inside the media viewer, after clicking 'select all media' and 'view'."},
+      {"x": 240, "y": 360, "name": "screenshot left-upper corner", "description": "run every time we load an image on media_viewer. screen-grab entire media viewer: image + UI."},
+      {"x": 1704, "y": 1149, "name": "screenshot right-lower corner", "description": "run every time we load an image on media_viewer. screen-grab entire media viewer: image + UI."},
+      {"x": 258, "y": 585, "name": "screenshot right-lower corner", "description": "run every time we load an image on media_viewer. screen-grab media only for enhanced visual language model accuracy"},
+      {"x": 1690, "y": 1127, "name": "screenshot right-lower corner", "description": "run every time we load an image on media_viewer. screen-grab media only for enhanced visual language model accuracy"}
+    ],
+    "documentation": [
+      {"x": 100, "y": 505, "name": "Documentation", "description": "part of the default workflow. go to a dedicated Documentation View. this is strongly preferred over the Documentation section header under Inpatient/Manage view. must remember to click Provider View to return back to Inpatient/Manage view prior to executing any tasks that requires you to be in Inpatient/Manage View."},
+      {"x": 1600, "y": 380, "name": "previous note", "description": "towards more recent notes"},
+      {"x": 1700, "y": 380, "name": "next note", "description": "towards older notes"},
+      {"x": 250, "y": 1120, "name": "previous page", "description": "towards more recent pages. each page holds 18 notes."},
+      {"x": 350, "y": 1120, "name": "next page", "description": "towards older pages. each page holds 18 notes."},
+      {"x": 400, "y": 450, "name": "note 1", "description": "1st note of current page"},
+      {"x": 400, "y": 486, "name": "note 2", "description": "2nd note of current page"},
+      {"x": 400, "y": 522, "name": "note 3", "description": "3rd note of current page"},
+      {"x": 400, "y": 558, "name": "note 4", "description": "4th note of current page"},
+      {"x": 400, "y": 594, "name": "note 5", "description": "5th note of current page"},
+      {"x": 400, "y": 630, "name": "note 6", "description": "6th note of current page"},
+      {"x": 400, "y": 666, "name": "note 7", "description": "7th note of current page"},
+      {"x": 400, "y": 702, "name": "note 8", "description": "8th note of current page"},
+      {"x": 400, "y": 738, "name": "note 9", "description": "9th note of current page"},
+      {"x": 400, "y": 774, "name": "note 10", "description": "10th note of current page"},
+      {"x": 400, "y": 810, "name": "note 11", "description": "11th note of current page"},
+      {"x": 400, "y": 846, "name": "note 12", "description": "12th note of current page"},
+      {"x": 400, "y": 882, "name": "note 13", "description": "13th note of current page"},
+      {"x": 400, "y": 918, "name": "note 14", "description": "14th note of current page"},
+      {"x": 400, "y": 954, "name": "note 15", "description": "15th note of current page"},
+      {"x": 400, "y": 990, "name": "note 16", "description": "16th note of current page"},
+      {"x": 400, "y": 1026, "name": "note 17", "description": "17th note of current page"},
+      {"x": 400, "y": 1062, "name": "note 18", "description": "18th note of current page"}
+    ],
+    "diagnostics": [
+      {"x": 430, "y": 395, "name": "click Diagnostics", "description": "click this after clicking on the Diagnostics section header, to enable keyboard navigation for a bullet-proof scripting experience."},
+      {"x": 30, "y": 115, "name": "exit diagnostic report", "description": "click this to leave the diagnostic report view, and to return to the main content of the Inpatient/Manage view, which should still be the Diagnostics section."}
+    ],
+    "labs": [
+      {"x": 100, "y": 380, "name": "Results Review", "description": "a very important function. part of the default workflow. sends you to a dedicated Results Review View (includes vitals, labs, and radiology/diagnostics). must remember to click Provider View to return back to Inpatient/Manage view prior to executing any tasks that requires you to be in Inpatient/Manage View."},
+      {"x": 500, "y": 350, "name": "All Radiology", "description": "see all Radiology/Diagnostics results in Results Review view. but the Diagnostics workflow from the Inpatient/Manage view is the default and preferred way, thus this shouldn't be used."},
+      {"x": 400, "y": 350, "name": "All Laboratory", "description": "see all Lab results in Results Review view. must remember to click Provider View to return back to Inpatient/Manage view prior to executing any tasks that requires you to be in Inpatient/Manage View."},
+      {"x": 350, "y": 350, "name": "Vitals", "description": "see all Vitals results in Results Review view. must remember to click Provider View to return back to Inpatient/Manage view prior to executing any tasks that requires you to be in Inpatient/Manage View."},
+      {"x": 700, "y": 430, "name": "Change Clinical Range", "description": "change the date-window of what results are displayed"},
+      {"x": 500, "y": 470, "name": "Copy All Laboratory Table", "description": "for transferring to our own database."},
+      {"x": 500, "y": 470, "name": "Copy All Vitals Table", "description": "for transferring to our own database."}
+    ],
+    "microbiology": [
+      {"x": 900, "y": 390, "name": "activate Microbiology", "description": "click this after clicking on the Microbiology section header, to enable keyboard navigation."},
+      {"x": 900, "y": 600, "name": "copy microbiology results", "description": null}
+    ],
+    "intake_output": [
+      {"x": 900, "y": 390, "name": "activate Intake & Output", "description": "click here after clicking on the Intake & Output section header, to enable keyboard navigation."}
+    ],
+    "patient_timeline_medications": [
+      {"x": 1726, "y": 901, "name": "scroll down", "description": "after taking a screenshot of the patient timeline medications content, execute this function (scroll down)  9 times to load a 'new page'. this is to be continued until all content of patient timeline & medications has been screenshotted and analyzed by the LLM."},
+      {"x": 1726, "y": 515, "name": "scroll up", "description": null},
+      {"x": 380, "y": 460, "name": "screenshot left-upper corner", "description": "left-upper corner coordinates for taking a screenshot of patient timeline medications content. after analyzing screenshot, you should assess if there's more scrolling AKA more content that needs to be loaded in the patient timeline-medications content, for a comprehensive analysis."},
+      {"x": 1740, "y": 915, "name": "screenshot right-lower corner", "description": "right-lower corner coordinates for taking a screenshot of patient timeline medications content. after analyzing screenshot, you should assess if there's more scrolling AKA more content that needs to be loaded in the patient timeline-medications content, for a comprehensive analysis."}
+    ],
+    "screen_sections": {
+      "warning_sign": {
+        "left_x": 1550,
+        "upper_y": 270,
+        "right_x": 1799,
+        "lower_y": 1149,
+        "name": "warning_sign"
+      },
+      "inpatient_manage": {
+        "left_x": 370,
+        "upper_y": 370,
+        "right_x": 1774,
+        "lower_y": 1149,
+        "name": "inpatient_manage"
+      },
+      "media_gallery_folder": {
+        "left_x": 370,
+        "upper_y": 370,
+        "right_x": 559,
+        "lower_y": 1149,
+        "name": "media_gallery_folder"
+      },
+      "media_viewer_entireUI": {
+        "left_x": 240,
+        "upper_y": 360,
+        "right_x": 1704,
+        "lower_y": 1149,
+        "name": "media_viewer_entireUI"
+      },
+      "media_viewer_content_only": {
+        "left_x": 258, 
+        "upper_y": 585,
+        "right_x": 1690,
+        "lower_y": 1127,
+        "name": "media_viewer_content_only"
+      },
+      "patient_timeline_medications_view": {
+        "left_x": 380,
+        "upper_y": 460,
+        "right_x": 1740,
+        "lower_y": 915,
+        "name": "patient_timeline_medications_view"
+      }
+    }
+  }

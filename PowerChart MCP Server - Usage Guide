@@ -1,0 +1,108 @@
+# PowerChart MCP Server - Usage Guide
+
+This guide explains how to set up and use the PowerChart MCP server for automating interactions with the PowerChart electronic health record system.
+
+## Setup
+
+### 1. Installation
+
+First, clone or download the repository containing the PowerChart MCP server files. Then install the dependencies:
+
+```bash
+# Install dependencies
+pip install -r requirements.txt
+
+# Or install the package
+pip install -e .
+```
+
+### 2. Coordinates File
+
+The server uses a JSON file (`coordinates.json`) that contains all the UI coordinates and screen sections. Make sure this file is in one of these locations:
+- Current directory (`./coordinates.json`)
+- Parent directory (`../coordinates.json`)
+- Home directory (`~/coordinates.json`)
+- Same directory as the script
+
+### 3. Starting the Server
+
+There are several ways to start the MCP server:
+
+**Option 1: Direct execution**
+```bash
+python powerchart_mcp.py
+```
+
+**Option 2: Using the MCP CLI**
+```bash
+mcp run powerchart_mcp.py
+```
+
+**Option 3: Using the installed script (if using setup.py)**
+```bash
+powerchart-mcp
+```
+
+**Option 4: Registering with Claude Desktop**
+```bash
+mcp install powerchart_mcp.py
+```
+
+## Available Tools
+
+The PowerChart MCP server provides the following tools:
+
+### Navigation
+
+- `navigate_to(section, element)`: Clicks on a specific element within a section
+- `double_click_element(section, element)`: Double-clicks on a specific element
+- `scroll_section(section, direction, clicks)`: Scrolls up or down within a section
+- `click_patient_from_list(position)`: Clicks on a patient at a specific position in the list
+
+### Screenshots
+
+- `capture_screen_section(section)`: Captures a screenshot of a specific section
+
+### Workflows
+
+- `perform_workflow(workflow_name)`: Performs a predefined workflow
+
+## Available Resources
+
+The server also provides these resources:
+
+- `coordinates://{section}`: Gets information about available coordinates for a section
+- `sections://list`: Lists all available sections for navigation
+
+## Example Usage
+
+Here's how you can use the PowerChart MCP server with Claude or another MCP-compatible LLM:
+
+```
+# Navigate to the patient list
+I'd like to open the patient list.
+
+# Capture a screenshot of the inpatient management section
+Please take a screenshot of the inpatient management section.
+
+# Perform a workflow
+Can you check the documentation for the current patient?
+
+# Get information about available sections
+What sections are available for navigation?
+```
+
+## Extending the Server
+
+You can easily extend the PowerChart MCP server by:
+
+1. Adding new coordinates to the `coordinates.md` file
+2. Adding new screen sections to the `SCREEN_SECTIONS` dictionary
+3. Creating new workflows in the `perform_workflow` function
+4. Adding new tools or resources as needed
+
+## Troubleshooting
+
+- **Coordinate Issues**: If clicks are not landing in the correct place, verify that the coordinates in the `coordinates.md` file are correct for your screen resolution.
+- **Missing Dependencies**: Make sure all required packages are installed.
+- **Permission Issues**: The automation requires permission to control your mouse and take screenshots. Make sure you grant these permissions if prompted.
